@@ -4,8 +4,9 @@ import java.util.Scanner;
 public class Main {
         public static void main(String[] args) {
             Scanner entrada = new Scanner(System.in);
-            int n = 0;
+            double x = 0;
             int N = 0;
+            double N1 = 0;
             double p = 0;
             double q = 0;
             int sumaP = 0;
@@ -14,12 +15,14 @@ public class Main {
             int contP = 0;
             int contQ = 0;
             int sumaT = 0;
-            int numeros2 = 0;
             int resp;
             int resp2;
             int op = 0;
+            double suma = 0;
+            double act = 0;
 
             MediaAritm numeros1;
+            MediaArmo numeros2 = new MediaArmo(N,x,suma,act);
             ArrayList<MediaAritm> num = new ArrayList<>();
 
 
@@ -35,12 +38,6 @@ public class Main {
                 switch (resp) {
                     case 1:
 
-                        System.out.println("1.- Población ");
-                        System.out.println("2.- Muestra ");
-                        resp2 = entrada.nextInt();
-
-                        if(resp2 == 1) {
-
                             System.out.println("Ingresa el número de elementos de la población ");
                             N = entrada.nextInt();
 
@@ -55,42 +52,21 @@ public class Main {
 
                             }while (numeros != N) ;
 
-                            numeros1 = new MediaAritm(n, N, numeros, sumaP, p, sumaQ, q);
+                            numeros1 = new MediaAritm(N, sumaP, p);
                             num.add(numeros1);
                             numeros1.mAp();
                             System.out.println("La suma de los números es: "+numeros1.sumaP);
                             System.out.println("la media es: " + numeros1.p);
 
-                        } else if (resp2 == 2) {
-                            System.out.println("Ingresa el número de elementos de la muestra ");
-                            n = entrada.nextInt();
-
-                            do {
-                                /*try {*/
-                                for (int x = 0; x < n; x++) {
-                                    System.out.println("ingresa el número ");
-                                    numeros2 = entrada.nextInt();
-                                    sumaQ += numeros2;
-                                    contQ++;
-                                }
-                               /* } catch (InputMismatchException e) {
-                                    System.out.println("Ingrese solo números enteros.");
-                                }
-                                op = 1;*/
-                            } while(numeros2 != n);
-
-                            numeros1 = new MediaAritm(n, N, numeros, sumaP, p, sumaQ, q);
-                            num.add(numeros1);
-                            numeros1.mAm();
-                            System.out.println("La suma de los números es: "+numeros1.sumaQ);
-                            System.out.println("la media es: " + numeros1.q);
-
-                        } else{
-                            System.out.println("Esta opción no existe");
-                        }
                         break;
 
                     case 2:
+                        System.out.println("Ingrese la población");
+                        N1 = entrada.nextDouble();
+                        numeros2.ingreso(N1);
+                        numeros2.inverso(x);
+                        numeros2.sumaInv(numeros2.act);
+                        numeros2.lector(numeros2.st, numeros2.act);
                         break;
 
                     case 3:
