@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6954e411-4db0-403c-ad9d-2e9c1408dcd9" name="Changes" comment="1er update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MediaArmo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MediaGeom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mediana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Moda.java" afterDir="false" />
+    <list default="true" id="6954e411-4db0-403c-ad9d-2e9c1408dcd9" name="Changes" comment="2da update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MediaAritm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MediaAritm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MediaArmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MediaArmo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +63,19 @@
       <option name="project" value="LOCAL" />
       <updated>1678296765565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2da update">
+      <created>1678302248922</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678302248922</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1er update" />
-    <option name="LAST_COMMIT_MESSAGE" value="1er update" />
+    <MESSAGE value="2da update" />
+    <option name="LAST_COMMIT_MESSAGE" value="2da update" />
   </component>
 </project>

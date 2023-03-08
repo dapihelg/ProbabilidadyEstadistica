@@ -63,10 +63,9 @@ public class Main {
                     case 2:
                         System.out.println("Ingrese la población");
                         N1 = entrada.nextDouble();
-                        numeros2.ingreso(N1);
-                        numeros2.inverso(x);
-                        numeros2.sumaInv(numeros2.act);
-                        numeros2.lector(numeros2.st, numeros2.act);
+                        do{
+                         for()
+                        }
                         break;
 
                     case 3:

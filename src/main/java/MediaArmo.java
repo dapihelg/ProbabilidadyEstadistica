@@ -21,30 +21,32 @@ public class MediaArmo {
         if (x == 0) {
             return 0;
         } else {
-            Math.pow(inverso(x), 1);
+            x = Math.pow(x, -1);
             x = st;
             x += act;
+            System.out.println("" +act);
         }
-        return x;
+        return act;
     }
-
-    public double sumaInv(double act) {
-        suma = N / sumaInv(act);
+    public double sumaT(){
+            suma = N/act;
         return suma;
     }
+}
 
-    public double ingreso(double x){
+    /*public double sumaInv(double x) {
+        suma = N/x;
+        return suma;
+    }*/
+
+    /*public void ingreso(double x){
         Scanner dato = new Scanner(System.in);
-        x = ingreso(x);
         System.out.println("Ingresa el número: ");
          x = dato.nextDouble();
-        return x;
-    }
+    }*/
 
-    public void lector(double st, double act){
+    /*public void lector(double st, double act){
         System.out.println("número de elementos: "+cont+" números: "+st+" ");
         System.out.printf("números inversos "+act);
-        sumaInv(act);
         cont++;
-    }
-}
+    }*/
