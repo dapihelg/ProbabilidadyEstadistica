@@ -17,36 +17,33 @@ public class MediaArmo {
         this.act = act;
     }
 
-    public double inverso(double x) {
-        if (x == 0) {
-            return 0;
-        } else {
-            x = Math.pow(x, -1);
-            x = st;
-            x += act;
-            System.out.println("" +act);
-        }
-        return act;
+    public double poblacion(double N){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese la población N: ");
+        N = in.nextDouble();
+        if (N < 1)
+                return 0;
+        else
+            return poblacion(N);
     }
-    public double sumaT(){
-            suma = N/act;
-        return suma;
+    public double inversos(double x){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese el número: ");
+        x= in.nextDouble();
+        if(x<N)
+            return 0;
+        else
+            return inversos(x-1)+1/x;
+        }
+    public double sumaT(double N){
+        if(x == 0)
+            return 0;
+        else
+            return sumaT(N)/inversos(x);
+    }
+    public void imprimir(){
+        System.out.println(" número "+x+", La suma de los números inversos es: "+inversos(x));
+        System.out.println("La media armónica es: "+sumaT(N));
     }
 }
 
-    /*public double sumaInv(double x) {
-        suma = N/x;
-        return suma;
-    }*/
-
-    /*public void ingreso(double x){
-        Scanner dato = new Scanner(System.in);
-        System.out.println("Ingresa el número: ");
-         x = dato.nextDouble();
-    }*/
-
-    /*public void lector(double st, double act){
-        System.out.println("número de elementos: "+cont+" números: "+st+" ");
-        System.out.printf("números inversos "+act);
-        cont++;
-    }*/

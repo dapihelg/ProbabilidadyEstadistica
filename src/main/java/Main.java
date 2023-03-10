@@ -61,11 +61,13 @@ public class Main {
                         break;
 
                     case 2:
-                        System.out.println("Ingrese la población");
-                        N1 = entrada.nextDouble();
-                        do{
+                        numeros2.poblacion(N);
+                        numeros2.inversos(x);
+                        numeros2.sumaT(N);
+                        numeros2.imprimir();
+                        /*do{
                          for()
-                        }
+                        }*/
                         break;
 
                     case 3:
