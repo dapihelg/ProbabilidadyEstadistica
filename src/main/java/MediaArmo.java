@@ -17,33 +17,31 @@ public class MediaArmo {
         this.act = act;
     }
 
-    public double poblacion(double N){
+    public double poblacion() {
         Scanner in = new Scanner(System.in);
         System.out.println("Ingrese la población N: ");
         N = in.nextDouble();
-        if (N < 1)
-                return 0;
-        else
-            return poblacion(N);
+        return N;
     }
-    public double inversos(double x){
+
+    public double inversos(double x) {
         Scanner in = new Scanner(System.in);
         System.out.println("Ingrese el número: ");
-        x= in.nextDouble();
-        if(x<N)
+        x = in.nextDouble();
+        if (x <N)
             return 0;
         else
-            return inversos(x-1)+1/x;
-        }
-    public double sumaT(double N){
-        if(x == 0)
-            return 0;
-        else
-            return sumaT(N)/inversos(x);
+            return inversos(x - 1) + 1 / x;
     }
-    public void imprimir(){
-        System.out.println(" número "+x+", La suma de los números inversos es: "+inversos(x));
-        System.out.println("La media armónica es: "+sumaT(N));
+
+    public double suma() {
+        suma = N / inversos(x);
+        return suma;
+    }
+
+    public void imprimir() {
+        System.out.println(" La suma de los números inversos es: " + inversos(x));
+        System.out.println(" La media armónica es: " + suma);
     }
 }
 

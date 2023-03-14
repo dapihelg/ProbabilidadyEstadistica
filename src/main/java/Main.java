@@ -61,13 +61,10 @@ public class Main {
                         break;
 
                     case 2:
-                        numeros2.poblacion(N);
+                        numeros2.poblacion();
                         numeros2.inversos(x);
-                        numeros2.sumaT(N);
+                        numeros2.suma();
                         numeros2.imprimir();
-                        /*do{
-                         for()
-                        }*/
                         break;
 
                     case 3:
