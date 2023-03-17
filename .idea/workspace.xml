@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6954e411-4db0-403c-ad9d-2e9c1408dcd9" name="Changes" comment="5ta update">
+    <list default="true" id="6954e411-4db0-403c-ad9d-2e9c1408dcd9" name="Changes" comment="6ta update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PromedioPonderado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MediaAritm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MediaAritm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MediaArmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MediaArmo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MediaGeom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MediaGeom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mediana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mediana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Moda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Moda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678477813038</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="6ta update">
+      <created>1678768217461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678768217461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -92,6 +104,7 @@
     <MESSAGE value="2da update" />
     <MESSAGE value="3er update" />
     <MESSAGE value="5ta update" />
-    <option name="LAST_COMMIT_MESSAGE" value="5ta update" />
+    <MESSAGE value="6ta update" />
+    <option name="LAST_COMMIT_MESSAGE" value="6ta update" />
   </component>
 </project>
