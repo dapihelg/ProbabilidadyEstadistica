@@ -28,4 +28,21 @@ public class MediaAritm {
         return max - min;
     }
 
+        public double calcularVarianza(double[] numeros, double media) {
+            double sumaCuadrados = 0;
+
+            for (int i = 0; i < numeros.length; i++) {
+                sumaCuadrados += Math.pow(numeros[i] - media, 2);
+            }
+
+            return sumaCuadrados / N;
+        }
+
+        public double calcularDesviacionEstandar(double varianza) {
+            return Math.sqrt(varianza);
+        }
+
+        public double calcularCoeficienteVariacion(double desviacionEstandar, double media) {
+            return (desviacionEstandar / media) * 100;
+        }
 }

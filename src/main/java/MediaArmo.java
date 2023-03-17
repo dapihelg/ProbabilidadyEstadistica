@@ -1,30 +1,19 @@
 public class MediaArmo {
-    /*public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingresa el número de elementos: ");
-        int n = scanner.nextInt();
-        int[] nums = new int[n];
-        System.out.print("Ingrese los elementos: ");
-        for (int i = 0; i < n; i++) {
-            nums[i] = scanner.nextInt();
-        }
-        double mA = mediaArmonica(nums.length, nums);
-        System.out.println("media armónica: " + mA);
-        scanner.close();
-    }*/
 
-    public static double mediaArmonica(int n, int... nums) {
-        if (n == 1) {
-            return nums[0];
-        } else {
-            return (n - 1) / ((1.0 / nums[n - 1]) + (1.0 / mediaArmonica(n - 1, nums)));
+    public static double calcularMedia(double[] numeros) {
+        double sum = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            sum += 1 / numeros[i];
         }
+        double media = numeros.length / sum;
+        return media;
     }
 
-    public static double calcularRango(int[] numeros) {
-        // Primero, encontramos el valor máximo y mínimo en el array
+    public static double calcularRango(double[] numeros) {
         double max = numeros[0];
         double min = numeros[0];
+
+        // Find the maximum and minimum values in the array
         for (int i = 1; i < numeros.length; i++) {
             if (numeros[i] > max) {
                 max = numeros[i];
@@ -33,9 +22,35 @@ public class MediaArmo {
                 min = numeros[i];
             }
         }
-        // Ahora que tenemos el valor máximo y mínimo, podemos calcular el rango
+
+        // Calculate the range using the maximum and minimum values
         double rango = max - min;
         return rango;
     }
+
+
+    public static double calcularVarianza(double[] numeros) {
+        double media = calcularMedia(numeros);
+        double sum = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            sum += Math.pow(numeros[i] - media, 2);
+        }
+        double varianza = sum / numeros.length;
+        return varianza;
+    }
+
+    public static double calcularDesviacionEstandar(double[] numeros) {
+        double varianza = calcularVarianza(numeros);
+        double desviacionEstandar = Math.sqrt(varianza);
+        return desviacionEstandar;
+    }
+
+    public static double calcularCoeficienteVariacion(double[] numeros) {
+        double desviacionEstandar = calcularDesviacionEstandar(numeros);
+        double media = calcularMedia(numeros);
+        double coeficienteVariacion = (desviacionEstandar / media) * 100;
+        return coeficienteVariacion;
+    }
+
 
 }
